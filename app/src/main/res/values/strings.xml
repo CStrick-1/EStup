@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">EStu</string>
+    <string name="horizontal">Horizontal</string>
+    <string name="vertical">Vertical</string>
+    <string name="bottomScaleText">BottomScale</string>
+    <string name="bottomAlphaText">BottomAlpha</string>
+    <string name="topScaleText">TopScale</string>
+    <string name="topAlphaText">TopAlpha</string>
+    <string name="middleScaleText">MiddleScale</string>
+    <string name="middleAlphaText">MiddleAlpha</string>
+    <string name="status" formatted="false">Status: %s</string>
+    <string name="idle">Idle</string>
+    <string name="dragging_left">Dragging Left</string>
+    <string name="dragging_right">Dragging Right</string>
+    <string name="dragging_top">Dragging Top</string>
+    <string name="dragging_bottom">Dragging Bottom</string>
+    <string name="settling_left">Settling Left</string>
+    <string name="settling_right">Settling Right</string>
+    <string name="settling_top">Settling Top</string>
+    <string name="settling_bottom">Settling Bottom</string>
+    <string name="three_child">3 Child</string>
+    <string name="five_child">5 Child</string>
+    <string name="middle">Middle Item</string>
+    <string name="bottom">Bottom Item</string>
+
+    <string name="text">例句：</string>
+    <string name="text1">Come by one day</string>
+    <string name="text2">来写下给予今天的自己一句话吧</string>
+    <string name="search">请输入要查询的单词</string>
+
+    <string name="cancel">取消</string>
+    <string name="search_own">输入查询</string>
+    <string name="wordname">单词书</string>
+
+
+    <string name="tvSpalsh_text_1">I am a slow walker </string>
+    <string name="tvSpalsh_text_2"> but I never walk backwards</string>
+
+    <string name="higher_education">高等教育</string>
+    <string name="exam_abroad">出国考试</string>
+    <string name="business_english">商务英语</string>
+
+</resources>

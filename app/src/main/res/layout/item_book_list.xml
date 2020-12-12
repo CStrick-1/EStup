@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <com.google.android.material.card.MaterialCardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:bind="http://schemas.android.com/apk/res-auto"
+        tools:ignore="MissingConstraints"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:clickable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/wordImage"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bg_snow"/>
+<!--                bind:loadWordImages="@{book.wordImage}"/>-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.1" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="单词书名称"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/guideline" />
+
+                <TextView
+                    android:id="@+id/wordName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="六级核心词汇"
+                    android:textStyle="bold"
+                    app:layout_constraintLeft_toLeftOf="@id/name"
+                    app:layout_constraintTop_toBottomOf="@+id/name"/>
+<!--                    bind:loadWordNames="@{book.wordName}"/>-->
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@android:drawable/menu_full_frame"
+                    app:layout_constraintLeft_toLeftOf="@id/wordName"
+                    app:layout_constraintTop_toBottomOf="@+id/wordName" />
+
+
+                <TextView
+                    android:id="@+id/Amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="单词数量"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/textView"/>
+<!--                    bind:loadWordAccounts="@{book.wordAmount}"/>-->
+
+                <TextView
+                    android:id="@+id/wordAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="@id/name"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="4521"
+                    android:textStyle="bold"
+                    app:layout_constraintTop_toBottomOf="@+id/Amount" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@android:drawable/menu_full_frame"
+                    app:layout_constraintLeft_toLeftOf="@id/wordAmount"
+                    app:layout_constraintTop_toBottomOf="@+id/wordAmount" />
+
+                <ImageButton
+                    android:id="@+id/wordLoad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/ic_load_24"
+                    app:layout_constraintTop_toBottomOf="@+id/wordAmount" />
+
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.0" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.15" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>

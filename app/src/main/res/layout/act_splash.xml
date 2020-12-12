@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto">
+    <!--  xmlns:bind: bind采用自定义命名空间，也可以取其他名字，防止和命名冲突  -->
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="splash"
+            type="com.es.estup.ui.daily.ViewModelDaily"/>
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:fitsSystemWindows="true">
+
+<!--            此处需要注意：splashpicture是导入布局中的布局变量-->
+            <include layout="@layout/item_splash_picture"
+                bind:splashpicture="@{splash.picture}"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</layout>

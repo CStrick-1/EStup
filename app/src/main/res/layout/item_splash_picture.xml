@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="splashpicture"
+            type="com.es.estup.data.model.Daily" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<!--    错误示范：不可直接使用srcCompat进行获取-->
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView2"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            bind:srcCompat="@{splashpicture.fenxiangImg}" />-->
+
+        <ImageView
+            android:id="@+id/ivsplash_picture"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            bind:loadSplashPicture="@{splashpicture.fenxiangImg}"
+            android:background="@color/colorAccent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
